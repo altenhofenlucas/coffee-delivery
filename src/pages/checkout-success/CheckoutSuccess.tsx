@@ -23,7 +23,6 @@ interface CheckoutSuccessLocationState {
   products: Product[]
 }
 
-// TODO - finish this page
 export function CheckoutSuccess() {
   const { address, paymentMethod } = useLocation().state as CheckoutSuccessLocationState
   const { colors } = DefaultTheme

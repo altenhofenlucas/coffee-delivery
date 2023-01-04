@@ -28,8 +28,6 @@ interface CartContextProviderProps {
   children: ReactNode
 }
 
-// TODO - Use local storage to persist cart state
-
 export function CartContextProvider({ children }: CartContextProviderProps) {
   const [cartState, dispatch] = useReducer(
     cartReducer,
